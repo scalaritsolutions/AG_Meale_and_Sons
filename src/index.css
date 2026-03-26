@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-farm-green: #2D4739;
+  --color-farm-gold: #E1AD01;
+  --color-farm-cream: #F9F7F2;
+  --color-farm-earth: #4A3728;
+  
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-farm-cream text-farm-green font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-sm border border-white/20 shadow-sm rounded-2xl;
+}
+
+.btn-primary {
+  @apply bg-farm-green text-farm-cream px-6 py-3 rounded-full font-medium transition-all hover:bg-farm-earth hover:shadow-lg active:scale-95;
+}
+
+.btn-secondary {
+  @apply bg-farm-gold text-farm-green px-6 py-3 rounded-full font-medium transition-all hover:opacity-90 active:scale-95;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-farm-cream;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-farm-green/20 rounded-full hover:bg-farm-green/40;
+}
