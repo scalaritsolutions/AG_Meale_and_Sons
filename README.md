@@ -1,5 +1,8 @@
 # A.G. Meale & Sons | Official Website
 
+https://www.agmeale.co.uk/contact-us/
+https://scalaritsolutions.github.io/AG_Meale_and_Sons/
+
 ![A.G. Meale & Sons](public/favicon.png)
 
 A high-fidelity, modern, and mobile-responsive digital experience for A.G. Meale & Sons—a family-run farm shop, nurseries, and plant centre in Stalham, Norfolk.

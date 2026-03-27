@@ -10,7 +10,7 @@
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -f"
+    "deploy": "cd dist && git init && git add . && git commit -m 'deploy' && git push -f https://github.com/scalaritsolutions/AG_Meale_and_Sons.git main:gh-pages"
   },
   "homepage": "https://scalaritsolutions.github.io/AG_Meale_and_Sons/",
   "dependencies": {
